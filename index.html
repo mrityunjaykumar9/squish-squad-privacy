@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Squish Squad Privacy Policy</title>
+<style>
+  :root{
+    --paper:#faf8f4;
+    --paper-raised:#f1ece2;
+    --ink:#2b2430;
+    --ink-soft:#5c5468;
+    --rule:#e2dacb;
+    --accent:#5b3a8e;
+    --accent-soft:#efe8fb;
+    --accent-ink:#4a2f74;
+    --good:#1f7a5c;
+    --good-soft:#e6f3ec;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#1c1821;
+      --paper-raised:#262030;
+      --ink:#efe9f5;
+      --ink-soft:#b2a7c4;
+      --rule:#3a3246;
+      --accent:#b79bff;
+      --accent-soft:#2e2544;
+      --accent-ink:#d9c9ff;
+      --good:#7fd9b4;
+      --good-soft:#1f3a30;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body{
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .wrap{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header.hero{
+    margin-bottom: 40px;
+  }
+  .eyebrow{
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  h1{
+    font-family: "Lora", Georgia, serif;
+    font-size: 40px;
+    line-height: 1.15;
+    margin: 0 0 10px;
+    color: var(--ink);
+  }
+  .sub{
+    color: var(--ink-soft);
+    font-size: 16px;
+    margin: 0;
+  }
+  .meta{
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .tldr{
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 22px 24px;
+    margin: 36px 0 44px;
+  }
+  .tldr h2{
+    font-family: "Lora", Georgia, serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 12px;
+    color: var(--accent-ink);
+  }
+  .tldr ul{
+    margin: 0;
+    padding-left: 20px;
+  }
+  .tldr li{ margin-bottom: 8px; }
+  .tldr li:last-child{ margin-bottom: 0; }
+
+  section{
+    margin: 40px 0;
+  }
+  h2{
+    font-family: "Lora", Georgia, serif;
+    font-size: 22px;
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  h2 .num{
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  p{ margin: 0 0 14px; }
+  ul{ margin: 0 0 14px; padding-left: 22px; }
+  li{ margin-bottom: 6px; }
+
+  .fill{
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.92em;
+  }
+
+  .badge-row{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 14px 0 4px;
+  }
+  .badge{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--good-soft);
+    color: var(--good);
+    border-radius: 999px;
+    padding: 5px 12px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 18px;
+    font-size: 14.5px;
+  }
+  th, td{
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th{
+    font-family: "Lora", Georgia, serif;
+    font-weight: 600;
+    color: var(--ink-soft);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  a{ color: var(--accent); text-decoration-color: var(--rule); text-underline-offset: 3px; }
+  a:hover{ text-decoration-color: var(--accent); }
+
+  footer{
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+
+  @media (max-width: 520px){
+    .wrap{ padding: 44px 18px 72px; }
+    h1{ font-size: 32px; }
+  }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="eyebrow">Privacy Policy</span>
+    <h1>Squish Squad</h1>
+    <p class="sub">Three polished, offline-friendly mini-games in one app — here's exactly what does and doesn't leave your device.</p>
+    <div class="meta">
+      <span>Effective: October 15, 2026</span>
+      <span>Version 1.0</span>
+    </div>
+  </header>
+
+  <div class="tldr">
+    <h2>The short version</h2>
+    <ul>
+      <li>Squish Squad has <strong>no account, no login, and no servers</strong> — your scores and stats are saved only on your own device.</li>
+      <li>We don't collect your name, email, contacts, location, or any personal information ourselves.</li>
+      <li>Google AdMob may collect device/advertising identifiers to show and measure ads — see §3.</li>
+      <li>You can ask us to delete your data any time, though in practice there's nothing stored anywhere but your own device (§6).</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2><span class="num">1</span> Who this policy covers</h2>
+    <p>This policy covers <strong>Squish Squad</strong> (the "App"), a collection of three casual games — Merge Snake, Fruit Slice, and Block Blast — played entirely within the app, with no server-side account system. It applies wherever the App is distributed, including Google Play.</p>
+    <p>Questions about this policy can be sent to <a href="mailto:mrityunjaykumar579@gmail.com">mrityunjaykumar579@gmail.com</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span> What the App itself stores</h2>
+    <p>The App saves your high scores, lifetime stats (games played, longest run, etc.), daily-challenge progress, your coin balance, player level, unlocked cosmetic skins, daily-gift and lucky-spin status, and your sound, vibration and reminder settings in a single small file <strong>stored locally on your device</strong> — the same way a notes app or a calculator keeps its own data. This file:</p>
+    <ul>
+      <li>never leaves your device or gets uploaded anywhere,</li>
+      <li>isn't linked to your name, email, or any account (there isn't one),</li>
+      <li>is removed automatically if you uninstall the App, and</li>
+      <li>can be cleared any time via your device's own Settings → Apps → Squish Squad → Clear data.</li>
+    </ul>
+    <div class="badge-row">
+      <span class="badge">✓ No account required</span>
+      <span class="badge">✓ No cloud sync</span>
+      <span class="badge">✓ Data never leaves your device</span>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span> Advertising</h2>
+    <p>Squish Squad shows ads (a bottom banner on the home screen, an occasional full-screen ad between games, and optional "watch an ad for a bonus" placements) through <strong>Google AdMob</strong>. To select and measure those ads, Google's AdMob SDK may automatically collect:</p>
+    <table>
+      <tr><th>Data</th><th>Purpose</th></tr>
+      <tr><td>Advertising ID</td><td>Personalizing and measuring ads, and limiting how often you see the same one</td></tr>
+      <tr><td>Device &amp; app info (device model, OS version, language, general region)</td><td>Serving ads correctly formatted for your device and basic fraud prevention</td></tr>
+      <tr><td>Ad interaction data (impressions, clicks, which ad finished playing)</td><td>Measuring ad performance and paying the app honestly for ad space shown</td></tr>
+    </table>
+    <p>This data is collected and processed by Google, under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's own Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob's data disclosure</a>. You can limit ad personalization at any time in your device's own Settings → Privacy → Ads (Android) or Google Account → Data &amp; Privacy → Ad settings.</p>
+    <p>A rewarded ad is always something you choose to start — the App never plays one without you tapping the "Watch Ad" button first, and closing it early simply forfeits that bonus rather than penalizing you.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span> Children's privacy</h2>
+    <p>Squish Squad is a general-audience app, not directed at or designed for children, and is not part of Google Play's Designed for Families program. It doesn't knowingly collect personal information from anyone, including children. If you believe a child has provided personal information through the App, contact us using the details in §1 and we'll address it.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span> Permissions</h2>
+    <p>The App requests only what it needs to run and to show ads — primarily internet access (to request and display ads) and, on newer Android versions, the Advertising ID permission (so AdMob can personalize and measure ads as described in §3). It also uses the vibration permission (for haptic feedback) and, on newer Android versions, the notification permission, which is only asked for after your first finished game and is used solely for optional local reminders (see below). It does not request access to your contacts, camera, microphone, location, photos, or files. <strong>Reminders:</strong> if you allow notifications, the App schedules a local reminder on your device for a day or more after you last played (and cancels it as soon as you return). These reminders are created and shown entirely on your device — no notification service or server is involved and no data is sent anywhere. You can turn them off in the App's Settings or in your device's notification settings.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span> Your choices</h2>
+    <ul>
+      <li><strong>Delete your data:</strong> clear the App's local storage any time via your device Settings, or simply uninstall the App.</li>
+      <li><strong>Limit ad personalization:</strong> use your device's Ad Settings (see §3) or opt out of interest-based ads at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</li>
+      <li><strong>Ask a question:</strong> contact <a href="mailto:mrityunjaykumar579@gmail.com">mrityunjaykumar579@gmail.com</a> any time.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span> Changes to this policy</h2>
+    <p>If what the App collects changes — for instance, if a future update adds cloud save or a new ad format — this page will be updated and the "Effective" date above will change accordingly. Material changes will also be reflected in the App's Play Store listing.</p>
+  </section>
+
+  <footer>
+    Squish Squad is an independent collection of casual games.
+  </footer>
+
+</div>
+</body>
+</html>
